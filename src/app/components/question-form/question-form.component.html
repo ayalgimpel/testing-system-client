@@ -1,0 +1,13 @@
+<div>
+    <form (ngSubmit)="onSubmit($event)">
+        <div class="form-group space">
+            <label>Title: </label>
+            <input [(ngModel)]="question.title" (change)="handleChange" name="title" id="title" type="text"
+                class="input form-control" />
+
+            <div *ngIf="errors?.title" class="alert alert-danger">{{errors?.title}}</div>
+
+        </div>
+        <button class="btn btn-primary btn-sm">Add question</button>
+    </form>
+</div>

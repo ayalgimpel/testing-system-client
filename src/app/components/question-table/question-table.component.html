@@ -1,0 +1,15 @@
+<div>
+    <table className="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let question of questions">
+                <th scope="row">{{question.id}}</th>
+                <td>{{question.title}}</td>
+        </tbody>
+    </table>
+</div>

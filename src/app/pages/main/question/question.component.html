@@ -1,0 +1,10 @@
+<div class="container questions">
+    <div class="side">
+        <h1>Questions List</h1>
+        <app-question-table [questions]="questions"></app-question-table>
+    </div>
+    <div class="side">
+        <h1>Add a new question</h1>
+        <app-question-form (onAddQuestion)="addQuestion($event)"></app-question-form>
+    </div>
+</div>
